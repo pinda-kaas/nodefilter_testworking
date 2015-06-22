@@ -1,0 +1,32 @@
+2015-06-22T01:38:20.113604+00:00 heroku[router]: at=info method=POST path="/" host=fierce-brook-6878.herokuapp.com request_id=f5cc1de3-c1ef-4724-9159-5ab54ccf3705 fwd="54.167.113.153" dyno=web.1 connect=4ms service=5ms status=400 bytes=254
+2015-06-22T01:38:20.161979+00:00 heroku[router]: at=info method=POST path="/" host=fierce-brook-6878.herokuapp.com request_id=d80a4908-902c-4fa8-bab3-6259c7073a63 fwd="54.167.113.153" dyno=web.1 connect=1ms service=6ms status=200 bytes=1141
+2015-06-22T01:38:20.140880+00:00 heroku[router]: at=info method=POST path="/" host=fierce-brook-6878.herokuapp.com request_id=9fe57d7e-d4be-4b6b-ae7d-e4498612ff74 fwd="54.167.113.153" dyno=web.1 connect=0ms service=11ms status=500 bytes=1102
+2015-06-22T01:38:20.111326+00:00 app[web.1]: Mon Jun 22 2015 01:38:20 GMT+0000 (UTC)
+2015-06-22T01:38:20.111412+00:00 app[web.1]: ------------------payload body:--------------------
+2015-06-22T01:38:20.111499+00:00 app[web.1]: {}
+2015-06-22T01:38:20.111546+00:00 app[web.1]: ------------------end payload body:--------------------
+2015-06-22T01:38:20.111587+00:00 app[web.1]: ----------------------payload with error--------------------------------------
+2015-06-22T01:38:20.112268+00:00 app[web.1]: { [Error: Key is required.]
+2015-06-22T01:38:20.112270+00:00 app[web.1]:   keyPath: [ 'payload' ],
+2015-06-22T01:38:20.112271+00:00 app[web.1]:   schema: { type: [Function: Array] },
+2015-06-22T01:38:20.112272+00:00 app[web.1]:   validator: 'required',
+2015-06-22T01:38:20.112274+00:00 app[web.1]:   message: 'Key is required.' }
+2015-06-22T01:38:20.112307+00:00 app[web.1]: ------------------end payload with error--------------------
+2015-06-22T01:38:20.128636+00:00 app[web.1]: --------------body parser error, error body/type/statuscode/arg:-----------
+2015-06-22T01:38:20.128666+00:00 app[web.1]: aaa
+2015-06-22T01:38:20.128668+00:00 app[web.1]:
+2015-06-22T01:38:20.128714+00:00 app[web.1]: undefined
+2015-06-22T01:38:20.128761+00:00 app[web.1]: 400
+2015-06-22T01:38:20.129798+00:00 app[web.1]: TypeError: Cannot read property '0' of undefined
+2015-06-22T01:38:20.129803+00:00 app[web.1]:     at /app/server.js:16:32
+2015-06-22T01:38:20.129823+00:00 app[web.1]:     at Layer.handle_error (/app/node_modules/express/lib/router/layer.js:58:5)
+2015-06-22T01:38:20.129824+00:00 app[web.1]:     at trim_prefix (/app/node_modules/express/lib/router/index.js:300:13)
+2015-06-22T01:38:20.129826+00:00 app[web.1]:     at /app/node_modules/express/lib/router/index.js:270:7
+2015-06-22T01:38:20.129827+00:00 app[web.1]:     at Function.proto.process_params (/app/node_modules/express/lib/router/index.js:321:12)
+2015-06-22T01:38:20.129829+00:00 app[web.1]:     at next (/app/node_modules/express/lib/router/index.js:261:10)
+2015-06-22T01:38:20.129830+00:00 app[web.1]:     at Layer.handle_error (/app/node_modules/express/lib/router/layer.js:54:12)
+2015-06-22T01:38:20.129831+00:00 app[web.1]:     at trim_prefix (/app/node_modules/express/lib/router/index.js:300:13)
+2015-06-22T01:38:20.129832+00:00 app[web.1]:     at /app/node_modules/express/lib/router/index.js:270:7
+2015-06-22T01:38:20.129834+00:00 app[web.1]:     at Function.proto.process_params (/app/node_modules/express/lib/router/index.js:321:12)
+2015-06-22T01:38:20.159677+00:00 app[web.1]: Mon Jun 22 2015 01:38:20 GMT+0000 (UTC)
+2015-06-22T01:38:20.159685+00:00 app[web.1]: ------------------Fine after valid jsonschema--------------------

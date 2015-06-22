@@ -1,0 +1,101 @@
+2015-06-21T23:24:11.498270+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-06-21T23:24:11.498292+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-06-21T23:24:11.890085+00:00 app[web.1]: App listening on port 46163
+2015-06-21T23:24:12.456367+00:00 heroku[web.1]: State changed from starting to up
+2015-06-21T23:24:13.365587+00:00 heroku[web.1]: Process exited with status 143
+2015-06-21T23:57:14.449955+00:00 heroku[web.1]: Idling
+2015-06-21T23:57:14.450546+00:00 heroku[web.1]: State changed from up to down
+2015-06-21T23:57:17.592760+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-06-21T23:57:19.618837+00:00 heroku[web.1]: Process exited with status 143
+2015-06-22T01:00:11.846983+00:00 heroku[slug-compiler]: Slug compilation started
+2015-06-22T01:00:11.847006+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-06-22T01:00:11.799208+00:00 heroku[api]: Deploy f2ae41b by couwenberg@gmail.com
+2015-06-22T01:00:11.799208+00:00 heroku[api]: Release v9 created by couwenberg@gmail.com
+2015-06-22T01:00:30.226545+00:00 heroku[web.1]: Unidling
+2015-06-22T01:00:30.226895+00:00 heroku[web.1]: State changed from down to starting
+2015-06-22T01:00:32.290720+00:00 heroku[web.1]: Starting process with command `node server.js`
+2015-06-22T01:00:34.193060+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-06-22T01:00:34.193121+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-06-22T01:00:34.599741+00:00 app[web.1]: App listening on port 53284
+2015-06-22T01:00:35.944625+00:00 heroku[web.1]: State changed from starting to up
+2015-06-22T01:00:36.353571+00:00 heroku[router]: at=info method=POST path="/api/filter" host=fierce-brook-6878.herokuapp.com request_id=04a0469d-2aa9-4e97-b311-2112c66af6f5 fwd="60.240.220.220" dyno=web.1 connect=0ms service=58ms status=400 bytes=254
+2015-06-22T01:00:36.344891+00:00 app[web.1]: --------------body parser error, error body:-----------
+2015-06-22T01:00:36.345648+00:00 app[web.1]: error type: undefined
+2015-06-22T01:00:36.345683+00:00 app[web.1]: error statuscode: 400
+2015-06-22T01:00:36.349769+00:00 app[web.1]: TypeError: Cannot read property '0' of undefined
+2015-06-22T01:00:36.349772+00:00 app[web.1]:     at /app/server.js:21:46
+2015-06-22T01:00:36.349774+00:00 app[web.1]:     at Layer.handle_error (/app/node_modules/express/lib/router/layer.js:58:5)
+2015-06-22T01:00:36.349776+00:00 app[web.1]:     at trim_prefix (/app/node_modules/express/lib/router/index.js:300:13)
+2015-06-22T01:00:36.349777+00:00 app[web.1]:     at /app/node_modules/express/lib/router/index.js:270:7
+2015-06-22T01:00:36.349779+00:00 app[web.1]:     at Function.proto.process_params (/app/node_modules/express/lib/router/index.js:321:12)
+2015-06-22T01:00:36.349780+00:00 app[web.1]:     at next (/app/node_modules/express/lib/router/index.js:261:10)
+2015-06-22T01:00:36.349781+00:00 app[web.1]:     at Layer.handle_error (/app/node_modules/express/lib/router/layer.js:54:12)
+2015-06-22T01:00:36.349783+00:00 app[web.1]:     at trim_prefix (/app/node_modules/express/lib/router/index.js:300:13)
+2015-06-22T01:00:36.349784+00:00 app[web.1]:     at /app/node_modules/express/lib/router/index.js:270:7
+2015-06-22T01:00:36.349785+00:00 app[web.1]:     at Function.proto.process_params (/app/node_modules/express/lib/router/index.js:321:12)
+2015-06-22T01:01:34.931349+00:00 heroku[router]: at=info method=POST path="/api/filter" host=fierce-brook-6878.herokuapp.com request_id=5a90461c-a076-4dca-914e-2f772957048f fwd="60.240.220.220" dyno=web.1 connect=0ms service=57ms status=200 bytes=352
+2015-06-22T01:01:34.935140+00:00 app[web.1]: ------------------Fine after valid jsonschema--------------------
+2015-06-22T01:01:34.934113+00:00 app[web.1]: Mon Jun 22 2015 01:01:34 GMT+0000 (UTC)
+2015-06-22T01:02:29.479476+00:00 heroku[router]: at=info method=POST path="/api/filter" host=fierce-brook-6878.herokuapp.com request_id=b774d754-b00c-47b8-ba2f-32e42995c362 fwd="60.240.220.220" dyno=web.1 connect=1ms service=14ms status=400 bytes=254
+2015-06-22T01:02:29.480103+00:00 app[web.1]: Mon Jun 22 2015 01:02:29 GMT+0000 (UTC)
+2015-06-22T01:02:29.480187+00:00 app[web.1]: ----------------------payload with error--------------------------------------
+2015-06-22T01:02:29.482845+00:00 app[web.1]: { [Error: Unknown key.]
+2015-06-22T01:02:29.482848+00:00 app[web.1]:   keyPath: [ 'skifp' ],
+2015-06-22T01:02:29.482851+00:00 app[web.1]:   validator: 'allowUnknownKeys',
+2015-06-22T01:02:29.482849+00:00 app[web.1]:   schema: { type: [Function: Object] },
+2015-06-22T01:02:29.482852+00:00 app[web.1]:   message: 'Unknown key.' }
+2015-06-22T01:02:29.482884+00:00 app[web.1]: ------------------end payload with error--------------------
+2015-06-22T01:05:40.028819+00:00 heroku[slug-compiler]: Slug compilation started
+2015-06-22T01:05:40.028825+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-06-22T01:05:39.993460+00:00 heroku[api]: Deploy 606cb11 by couwenberg@gmail.com
+2015-06-22T01:05:39.993460+00:00 heroku[api]: Release v10 created by couwenberg@gmail.com
+2015-06-22T01:05:40.134092+00:00 heroku[web.1]: State changed from up to starting
+2015-06-22T01:05:42.556806+00:00 heroku[web.1]: Starting process with command `node server.js`
+2015-06-22T01:05:43.074199+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-06-22T01:05:44.240097+00:00 app[web.1]: Detected 512 MB available memory, 512 MB limit per process (WEB_MEMORY)
+2015-06-22T01:05:44.240127+00:00 app[web.1]: Recommending WEB_CONCURRENCY=1
+2015-06-22T01:05:44.614648+00:00 app[web.1]: App listening on port 31455
+2015-06-22T01:05:45.229499+00:00 heroku[web.1]: State changed from starting to up
+2015-06-22T01:05:46.079219+00:00 heroku[web.1]: Process exited with status 143
+2015-06-22T01:05:46.557136+00:00 heroku[router]: at=info method=POST path="/api/filter" host=fierce-brook-6878.herokuapp.com request_id=7389af07-e26d-40c2-92d0-4a04c8b8a265 fwd="60.240.220.220" dyno=web.1 connect=1ms service=49ms status=400 bytes=254
+2015-06-22T01:05:46.555699+00:00 app[web.1]: --------------body parser error, error body:-----------
+2015-06-22T01:05:46.556412+00:00 app[web.1]: error type: undefined
+2015-06-22T01:05:46.556444+00:00 app[web.1]: error statuscode: 400
+2015-06-22T01:05:46.560771+00:00 app[web.1]: TypeError: Cannot read property '0' of undefined
+2015-06-22T01:05:46.560778+00:00 app[web.1]:     at Layer.handle_error (/app/node_modules/express/lib/router/layer.js:58:5)
+2015-06-22T01:05:46.560776+00:00 app[web.1]:     at /app/server.js:21:46
+2015-06-22T01:05:46.560781+00:00 app[web.1]:     at /app/node_modules/express/lib/router/index.js:270:7
+2015-06-22T01:05:46.560779+00:00 app[web.1]:     at trim_prefix (/app/node_modules/express/lib/router/index.js:300:13)
+2015-06-22T01:05:46.560783+00:00 app[web.1]:     at Function.proto.process_params (/app/node_modules/express/lib/router/index.js:321:12)
+2015-06-22T01:05:46.560784+00:00 app[web.1]:     at next (/app/node_modules/express/lib/router/index.js:261:10)
+2015-06-22T01:05:46.560786+00:00 app[web.1]:     at Layer.handle_error (/app/node_modules/express/lib/router/layer.js:54:12)
+2015-06-22T01:05:46.560787+00:00 app[web.1]:     at trim_prefix (/app/node_modules/express/lib/router/index.js:300:13)
+2015-06-22T01:05:46.560788+00:00 app[web.1]:     at /app/node_modules/express/lib/router/index.js:270:7
+2015-06-22T01:05:46.560789+00:00 app[web.1]:     at Function.proto.process_params (/app/node_modules/express/lib/router/index.js:321:12)
+2015-06-22T01:06:38.589618+00:00 heroku[router]: at=info method=POST path="/api/filter" host=fierce-brook-6878.herokuapp.com request_id=163e3701-d0c5-4a12-a200-864f53808b8c fwd="60.240.220.220" dyno=web.1 connect=2ms service=17ms status=400 bytes=254
+2015-06-22T01:06:38.588129+00:00 app[web.1]: --------------body parser error, error body:-----------
+2015-06-22T01:06:38.588262+00:00 app[web.1]: error type: undefined
+2015-06-22T01:06:38.588331+00:00 app[web.1]: error statuscode: 400
+2015-06-22T01:06:38.595457+00:00 app[web.1]:     at next (/app/node_modules/express/lib/router/index.js:261:10)
+2015-06-22T01:06:38.595445+00:00 app[web.1]: TypeError: Cannot read property '0' of undefined
+2015-06-22T01:06:38.595458+00:00 app[web.1]:     at Layer.handle_error (/app/node_modules/express/lib/router/layer.js:54:12)
+2015-06-22T01:06:38.595460+00:00 app[web.1]:     at /app/node_modules/express/lib/router/index.js:270:7
+2015-06-22T01:06:38.595450+00:00 app[web.1]:     at /app/server.js:21:46
+2015-06-22T01:06:38.595452+00:00 app[web.1]:     at Layer.handle_error (/app/node_modules/express/lib/router/layer.js:58:5)
+2015-06-22T01:06:38.595461+00:00 app[web.1]:     at Function.proto.process_params (/app/node_modules/express/lib/router/index.js:321:12)
+2015-06-22T01:06:38.595453+00:00 app[web.1]:     at trim_prefix (/app/node_modules/express/lib/router/index.js:300:13)
+2015-06-22T01:06:38.595454+00:00 app[web.1]:     at /app/node_modules/express/lib/router/index.js:270:7
+2015-06-22T01:06:38.595459+00:00 app[web.1]:     at trim_prefix (/app/node_modules/express/lib/router/index.js:300:13)
+2015-06-22T01:06:38.595455+00:00 app[web.1]:     at Function.proto.process_params (/app/node_modules/express/lib/router/index.js:321:12)
+2015-06-22T01:07:04.914992+00:00 heroku[router]: at=info method=POST path="/api/filter" host=fierce-brook-6878.herokuapp.com request_id=3687b39e-f46d-45e9-a327-95d6da5039d3 fwd="60.240.220.220" dyno=web.1 connect=2ms service=38ms status=200 bytes=352
+2015-06-22T01:07:04.904683+00:00 app[web.1]: Mon Jun 22 2015 01:07:04 GMT+0000 (UTC)
+2015-06-22T01:07:04.904698+00:00 app[web.1]: ------------------Fine after valid jsonschema--------------------
+2015-06-22T01:07:35.397797+00:00 heroku[router]: at=info method=POST path="/api/filter" host=fierce-brook-6878.herokuapp.com request_id=0195fc07-e7cb-4fdd-86a2-5f546734c89c fwd="60.240.220.220" dyno=web.1 connect=8ms service=15ms status=400 bytes=254
+2015-06-22T01:07:35.392228+00:00 app[web.1]: Mon Jun 22 2015 01:07:35 GMT+0000 (UTC)
+2015-06-22T01:07:35.392287+00:00 app[web.1]: ----------------------payload with error--------------------------------------
+2015-06-22T01:07:35.395175+00:00 app[web.1]: { [Error: Unknown key.]
+2015-06-22T01:07:35.395180+00:00 app[web.1]:   keyPath: [ 'skipw' ],
+2015-06-22T01:07:35.395183+00:00 app[web.1]:   schema: { type: [Function: Object] },
+2015-06-22T01:07:35.395186+00:00 app[web.1]:   message: 'Unknown key.' }
+2015-06-22T01:07:35.395185+00:00 app[web.1]:   validator: 'allowUnknownKeys',
+2015-06-22T01:07:35.395196+00:00 app[web.1]: ------------------end payload with error--------------------
