@@ -2,13 +2,13 @@
 
 var request = require('supertest');
 var assert = require('assert');
-var app = require('./app.js');
+var app = require('./server');
+var agent = request.agent(app);
 
 describe('testing filter', function() {
     it('should return a valid response', function (done) {
         var testJson = require('./testPayload.json');
-        request(app)
-            .post('/')
+        agent.post('/')
             .send(testJson)
             .expect(200, {
                 "response": [

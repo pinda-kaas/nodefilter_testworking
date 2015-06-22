@@ -13,7 +13,7 @@ app.use (function (error, req, res, next){
         "error": "Could not decode request: JSON parsing failed"
     });
 
-    console.log('--------------body parser error, error body/type/statuscode/arg:-----------');
+    console.log('--------------Body parser error, error body/type/statuscode/arg:-----------');
     console.log(error.body);
     console.log(error.type);
     console.log(error.statusCode);
@@ -24,6 +24,10 @@ app.use (function (error, req, res, next){
 
 // routes ======================================================================
 require('./routes.js')(app);
+
+// listen (start app with node server.js) ======================================
+app.listen(port);
+console.log("App listening on porty " + port);
 
 module.exports =app;
 
