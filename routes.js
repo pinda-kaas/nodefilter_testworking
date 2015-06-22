@@ -1,7 +1,5 @@
 var _ = require('underscore');
 
-
-
 module.exports = function (app) {
     app.post('/*', function (req, res) {
 
@@ -64,11 +62,8 @@ module.exports = function (app) {
             }
 
         };
-
         var isvalid = require('isvalid');
-
         var validJson=true;
-
         isvalid(req.body,schema
             , function(err, validObj) {
                 if (!validObj) {
@@ -116,8 +111,5 @@ module.exports = function (app) {
             console.log('------------------Fine after valid jsonschema--------------------')
         }
     }
-
-
-
 
 }
